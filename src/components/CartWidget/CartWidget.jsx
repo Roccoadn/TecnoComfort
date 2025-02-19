@@ -1,6 +1,7 @@
+import styles from "./CartWidget.module.css"
 function CartWidget () {
     return (
-        <div className="cart-widget">
+        <div className={styles.CartWidget}>
             <p>🛒2</p>    
         </div>
     )

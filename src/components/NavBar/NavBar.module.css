@@ -1,0 +1,32 @@
+.NavBar{
+    display: flex;
+    height: 80px;
+    background-color: rgb(20, 20, 20);
+    justify-content: space-between;
+    color: black;
+    .ListaNav{
+        display: flex;
+    }
+    ul{
+        display: flex;
+        list-style: none;
+    }
+    .Link{
+        margin-top: 1rem;
+        padding: 10px;
+        margin-right: 20px;            
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    .Link:hover{
+        color: #E2611B;
+    }
+    img{
+        height: 25px;
+        margin-top: 1.5rem;
+        margin-left: 2rem;
+      }
+}

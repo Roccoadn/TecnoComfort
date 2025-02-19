@@ -2,54 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-nav{
-  display: flex;
-  height: 80px;
-  background-color: rgb(20, 20, 20);
-  justify-content: space-between;
-  color: black;
-  img{
-    height: 25px;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 2rem;
-  }
-  .ListaNav{
-    display: flex;
-    ul{
-      display: flex;
-      list-style: none;
-      padding: 10px;
-      li{
-        padding: 10px;
-        margin: 10px;
-        font-size: 20px;
-        font-weight: bold;
-        color: white;
-        cursor: pointer;
-      }
-      li:hover{
-        color: #E2611B;
-      }
-    }
-    .cart-widget{
-      background-color: #E2611B;
-      border: 0.5px solid rgb(46, 46, 46);
-      border-radius: 16px;
-      margin-right: 2rem;
-      margin-top: auto;
-      margin-bottom: auto; 
-      padding: 5px;
-      font-size: 20px;
-      font-weight: bold;
-      color: white;
-      cursor: pointer;
-    }
-    .cart-widget:hover{
-      background-color: #bb4607;
-    }
-  }
+  font-family: "Poppins", serif;
 }
 

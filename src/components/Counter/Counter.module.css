@@ -1,0 +1,10 @@
+.Counter{
+    p{
+        color: black;
+    }
+    button{
+        color: white;
+        margin: 0 5px;
+        border-radius: 50%;
+    }
+}
