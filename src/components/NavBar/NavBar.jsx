@@ -10,7 +10,7 @@ function Navbar () {
                 <ul>
                     <Link className={styles.Link} to='category/smartphones'>Smartphones</Link>
                     <Link className={styles.Link} to='category/tablets'>Tablets</Link>
-                    <Link className={styles.Link} to='category/laptops'>Laptops</Link>
+                    <Link className={styles.Link} to='category/notebooks'>Notebooks</Link>
                 </ul>
                 <CartWidget />
             </div>
