@@ -8,7 +8,7 @@ function Item ({ products }){
             <img src={products.thumbnail} alt={products.name}/>
             <h2>{products.title}</h2>
             <p>$ {products.price}</p>
-            <button><Link className={styles.Link} to={`/item/${products.id}`}>Ver detalle
+            <button className={styles.detailButton}><Link className={styles.Link} to={`/item/${products.id}`}>Ver detalle
             </Link></button>
         </div>
     )

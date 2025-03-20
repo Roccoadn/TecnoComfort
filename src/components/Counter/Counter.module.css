@@ -1,0 +1,31 @@
+.CounterContainer{
+    margin-top: 2rem;
+    margin-right: 25%;
+    display: flex;
+    height: 2rem;
+    p{
+        height: 2rem;
+        width: 2rem;
+        padding-top: 2.5px;
+        background-color: #0e0e0e;
+        border: 0.5px solid #dadada;
+        color: white;
+        margin-right: 10px;
+        border-radius: 4px;
+    }
+    button{
+        cursor: pointer;
+        border-radius: 4px;
+        border: 0.5px solid #dadada;
+        color: white;
+        background-color: #0e0e0e;
+        margin-right: 10px;
+        padding: 0px 5px;
+        font-weight: bold;
+        font-size: large;
+        transition: all 0.5s;
+    }
+    button:hover{
+        background-color: #E27B1B;
+    }
+}

@@ -5,7 +5,11 @@ import { useNavigate }  from "react-router"
 function CartWidget () {
     const navigate = useNavigate()
     const handleCart = () => {
-        navigate("/cart")
+        if (prodQuantity > 0) {
+            navigate("/cart");
+        } else {
+            navigate("/error404");
+        }
     }
 
     const { getQuantity } = useCartContext()

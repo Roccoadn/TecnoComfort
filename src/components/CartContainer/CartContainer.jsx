@@ -13,7 +13,7 @@ function CartContainer () {
                     <h3>
                         {prod.title} 
                         <span className={styles.quantitySpan}>
-                            x {prod.quantity}
+                            x {prod.quantity}u
                         </span>
                     </h3>  
                     <button onClick={() => cartReduceOne(prod.id)} className={styles.deleteButton}>

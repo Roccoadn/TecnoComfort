@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useState, useContext } from 'react'
 import { cartContext } from '../../context/cartContext'
+import styles from './Counter.module.css'
 
 function Counter({ product }) {
     const [count, setCount] = useState(0)
@@ -11,7 +12,9 @@ function Counter({ product }) {
     }
 
     const handleRest = () => {
-        setCount(count - 1)
+        if (count >= 1) {
+            setCount(count - 1)
+        }       
     }
 
     const handleAddToCart = () => {
@@ -19,7 +22,7 @@ function Counter({ product }) {
     }
 
     return (
-        <div>
+        <div className={styles.CounterContainer}>
             <p>{count}</p>
             <button onClick={handleAdd}> + </button>
             <button onClick={handleRest}> - </button>

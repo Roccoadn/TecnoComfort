@@ -1,5 +1,5 @@
 .ItemDetailContainer{
-    justify-content: space-between;
+    justify-content: space-around;
     display: flex;
     text-align: center;
     margin-top: 2rem;
@@ -15,21 +15,22 @@
     p{
         font-weight: bold;
         font-size: 20px;
-        color: #e27b1b;
-        padding: 10px;
-    }
-    button{
-        padding: 5px 10px;
-        background-color: #080808;
-        color: white;
-        margin: 0 5px;
-        cursor: pointer;
-        border: none;
+        width: 120px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        box-shadow: 5px 5px 28px -21px rgba(0,0,0,0.75);
+        border: 0.5px solid #dadada;
         border-radius: 5px;
+        color: #1e9742;
     }
-    button:hover{
-        background-color: #e27b1b;
-        color: #080808;
-        transition: all 1s;
+}
+
+.ItemTextContainer{
+    width: 500px;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    h3{
+        text-align: start;
     }
 }

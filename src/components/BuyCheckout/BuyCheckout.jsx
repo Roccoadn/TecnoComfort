@@ -24,7 +24,7 @@ function BuyCheckout () {
             products: cart,
             client: {fullname: name, email: email, phone: phone},
             time: serverTimestamp(),
-            total: getTotal()
+            total: getTotal(),
         } 
         const id = await createBuyOrder(order)
 
@@ -35,6 +35,9 @@ function BuyCheckout () {
         MySwal.fire({
             title: "Compra finalizada!",
             text: `Tu orden de compra es -> ${id} `,
+            background: '#0e0e0e',
+            color: 'white',
+            confirmButtonColor:'#e27b1b',
           }).then(() => navigate('/'))
     }
 
@@ -50,7 +53,7 @@ function BuyCheckout () {
                 <label htmlFor="phone">Numero de telefono</label>
                 <input id="phone" type="number" placeholder="11-2233-4455" required />
 
-                <button type="submit">Enviar</button>
+                <button className={styles.buttonCheckout} type="submit">Enviar</button>
             </form>
         </div>
         
